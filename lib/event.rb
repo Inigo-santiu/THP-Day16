@@ -7,6 +7,7 @@ attr_accessor :start_date, :duration, :title, :attendees
 @start_date
 @duration
 @title
+@@all_users = []
 
   def initialize(get_start_date, get_duration, get_title, get_attendees)
     @start_date = Time.parse(get_start_date)
@@ -50,6 +51,10 @@ attr_accessor :start_date, :duration, :title, :attendees
     puts "Attendees: #{@attendees}"
   end
 
+  def find_by_email
+
+  end
+  
 
 
 
